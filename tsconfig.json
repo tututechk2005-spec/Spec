@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": false,
+    "sourceMap": false
+  },
+  "include": [
+    "index.ts",
+    "bot.ts",
+    "admin.ts",
+    "user.ts",
+    "market.ts",
+    "strategy.ts",
+    "trade.ts",
+    "telegram.ts",
+    "binance.ts",
+    "database.ts",
+    "buttons.ts",
+    "config.ts",
+    "utils.ts",
+    "session.ts",
+    "scheduler.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

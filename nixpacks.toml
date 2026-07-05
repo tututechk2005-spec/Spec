@@ -1,0 +1,13 @@
+# Node 20 LTS — better-sqlite3 v9 has prebuilt binaries for Node 20 on Linux x64
+# No Python/gcc compilation needed → zero native build errors
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "node dist/index.js"
