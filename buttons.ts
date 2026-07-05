@@ -195,7 +195,13 @@ export function adminNavRow() {
   return row(btn('⬅️ Admin', 'admin_home'), homeBtn, closeBtn);
 }
 
-export function adminUsersKeyboard(users: Array<{ telegram_id: string; username?: string; first_name?: string }>) {
+export function adminUsersKeyboard(
+  users: Array<{
+    telegram_id: string;
+    username: string | null;
+    first_name: string | null;
+  }>
+) {
   const userBtns = users.slice(0, 10).map(u =>
     row(btn(`👤 ${u.username ? '@' + u.username : u.first_name || u.telegram_id}`, `admin_user_${u.telegram_id}`))
   );
