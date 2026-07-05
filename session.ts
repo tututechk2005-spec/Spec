@@ -11,7 +11,8 @@ export type InputState =
   | 'await_leverage'
   | 'await_risk'
   | 'await_confidence'
-  | 'await_symbol_analyse';
+  | 'await_symbol_analyse'
+  | 'admin_broadcast';
 
 export interface UserSession {
   currentMessageId: number | null;
