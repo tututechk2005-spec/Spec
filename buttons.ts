@@ -6,9 +6,9 @@ function row(...buttons: InlineKeyboardButton[]): IKB { return buttons; }
 function btn(text: string, data: string): InlineKeyboardButton { return { text, callback_data: data }; }
 
 // ── Universal navigation row ───────────────────────────────────────────────────
-const backBtn  = btn('⬅️ Back', 'back');
-const homeBtn  = btn('🏠 Home', 'home');
-const closeBtn = btn('❌ Close', 'close_menu');
+export const backBtn  = btn('⬅️ Back', 'back');
+export const homeBtn  = btn('🏠 Home', 'home');
+export const closeBtn = btn('❌ Close', 'close_menu');
 const navRow   = row(backBtn, homeBtn, closeBtn);
 const navShort = row(homeBtn, closeBtn);
 
